@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+header{
+    display: flex;
+    padding: 0px 20px;
+     justify-content: space-between;
+    background-color: #fcc040;
+    align-items: center;
+    
+}
+header .logo{
+    width: 30%;
+    text-transform: uppercase;
+
+}
+header ul.menu{
+    display: flex;
+    list-style: none;
+}
+header ul.menu>li{
+    padding: 12px 20px;
+    border-right: 1px solid black;
+}
+header ul.menu>li:last-child{
+    border: none;
+}
+header ul.menu>li>ul{
+    position: absolute;
+    background-color: white;
+    list-style: none;
+    top: 42px;
+    width: 170px;
+    display: none;
+}
+header ul.menu>li:hover>ul{
+    display: block;
+}
+header ul.menu>li>ul>li{
+    padding: 10px;
+    border-bottom: 1px solid #180f0f;
+}
+header ul.menu>li>ul>li:hover{
+    background-color: #dabbbb;
+}
+ ul {
+  list-style: disc;  /* Hiển thị dấu chấm tròn */
+  padding-left: 20px; /* Tạo khoảng cách cho dễ nhìn */
+}
+ table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 20px auto;
+  }
+  th, td {
+    border: 1px solid #444;
+    padding: 10px;
+    text-align: center;
+  }
+  th {
+    background-color: #4CAF50;
+    color: white;
+  }
+  tr:nth-child(even) {
+    background-color: #f2f2f2; /* dòng chẵn màu khác */
+  }
+  .card {
+  width: 300px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center; /* 🔥 canh giữa các card theo chiều ngang */
+  align-items: center;      /* (tùy chọn) canh giữa theo chiều dọc nếu có chiều cao cố định */
+  margin: 0 auto;           /* 🔥 đưa toàn bộ container ra giữa trang */
+  max-width: 1200px;        /* Giới hạn độ rộng, để giữa trang gọn hơn */
+}
+
+.card:hover {
+  transform: translateY(5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+.card-content h3 {
+  margin: 0 0 10px;
+  color: #7692ad;
+}
+.card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+
+.card-content p {
+  color: #444;
+  line-height: 1.5;
+}
+
+/* -------------------- CSS cho form -------------------- */
+ .form {
+  font-family: Arial, sans-serif;
+  background-color: #f0f4f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.contact-form {
+  background-color: white;
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  width: 400px;
+}
+
+.contact-form h2 {
+  text-align: center;
+  color: #003366;
+  margin-bottom: 20px;
+}
+
+.contact-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: border-color 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #ff6600;
+  outline: none;
+}
+
+.contact-form button {
+  width: 100%;
+  background-color: #ff6600;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #e65c00;
+}
+footer {
+  width: 99vw;                  /* Trải rộng toàn màn hình */
+  background-color: #2d73cf;     /* Màu nền vàng (có thể đổi) */
+  color: #000;                   /* Màu chữ đen */
+  text-align: center;            /* Căn giữa nội dung */
+  padding: 45px 0;               /* Tăng chiều cao (to hơn) */
+  font-size: 29px;               /* Cỡ chữ lớn hơn */
+  font-weight: bold;             /* Chữ đậm */
+  border-top: 15px;    /* Viền trên dày hơn */
+  border-bottom: 15px; /* Viền dưới nếu muốn có thêm */
+  box-sizing: border-box;
+}
+
